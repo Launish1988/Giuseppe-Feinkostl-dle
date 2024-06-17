@@ -17,7 +17,7 @@
             margin: auto;
             padding: 20px;
         }
-        h1 {
+        h1, h2 {
             text-align: center;
             color: #dc3545;
         }
@@ -59,12 +59,34 @@
         .form-group input[type="submit"]:hover {
             background-color: #c82333;
         }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 45%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .agb {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Willkommen bei Giuseppes Feinkostlädle</h1>
         <p>Hier finden Sie eine feine Auswahl an Brot, Wein, Gemüse und Wurst.</p>
+        
+        <div class="images">
+            <img src="https://via.placeholder.com/400x300.png?text=Brot" alt="Brot">
+            <img src="https://via.placeholder.com/400x300.png?text=Wein" alt="Wein">
+        </div>
         
         <div class="order-form">
             <h2>Bestellung aufgeben</h2>
@@ -89,6 +111,33 @@
                     <input type="submit" value="Bestellung abschicken">
                 </div>
             </form>
+        </div>
+        
+        <div class="agb">
+            <h2>Allgemeine Geschäftsbedingungen (AGB)</h2>
+            <p><strong>1. Geltungsbereich</strong></p>
+            <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Bestellungen, die Kunden bei Giuseppes Feinkostlädle aufgeben.</p>
+            
+            <p><strong>2. Vertragspartner</strong></p>
+            <p>Der Kaufvertrag kommt zustande mit Giuseppes Feinkostlädle, Inhaber Giuseppe Mustermann, Beispielstraße 123, 12345 Musterstadt.</p>
+            
+            <p><strong>3. Angebot und Vertragsschluss</strong></p>
+            <p>Durch das Absenden der Bestellung geben Sie ein verbindliches Angebot ab. Der Vertrag kommt zustande, wenn wir Ihre Bestellung durch eine Auftragsbestätigung per E-Mail annehmen.</p>
+            
+            <p><strong>4. Preise und Zahlung</strong></p>
+            <p>Die angegebenen Preise sind Endpreise und enthalten die gesetzliche Mehrwertsteuer. Die Zahlung erfolgt per PayPal.</p>
+            
+            <p><strong>5. Abholung</strong></p>
+            <p>Die bestellten Waren können nur im Laden abgeholt werden. Bitte beachten Sie, dass die Bestellung mindestens 2 Tage vor Abholung erfolgen muss.</p>
+            
+            <p><strong>6. Widerrufsrecht</strong></p>
+            <p>Als Kleingewerbe sind wir nach § 19 UStG von der Umsatzsteuer befreit und bieten daher kein Widerrufsrecht an. Bitte prüfen Sie Ihre Bestellung sorgfältig.</p>
+            
+            <p><strong>7. Haftung</strong></p>
+            <p>Unsere Haftung beschränkt sich auf Vorsatz und grobe Fahrlässigkeit. Für leichte Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten.</p>
+            
+            <p><strong>8. Schlussbestimmungen</strong></p>
+            <p>Sollten einzelne Bestimmungen dieser AGB unwirksam sein, so bleibt der Vertrag im Übrigen wirksam. Anstelle der unwirksamen Bestimmungen gelten die einschlägigen gesetzlichen Vorschriften.</p>
         </div>
     </div>
 </body>

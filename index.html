@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giuseppes Feinkostlädle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #dc3545;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .order-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input[type="text"], 
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group input[type="submit"] {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen bei Giuseppes Feinkostlädle</h1>
+        <p>Hier finden Sie eine feine Auswahl an Brot, Wein, Gemüse und Wurst.</p>
+        
+        <div class="order-form">
+            <h2>Bestellung aufgeben</h2>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="kaiuwehaase@hotmail.de">
+                <input type="hidden" name="item_name" value="Giuseppes Feinkostlädle Bestellung">
+                <input type="hidden" name="currency_code" value="EUR">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail Adresse:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="order">Bestellung (bitte geben Sie Ihre Bestellung ein):</label>
+                    <textarea id="order" name="order" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Bestellung abschicken">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
